@@ -1,2 +1,2 @@
 # MvcMusicStore
-messing around with ASP.NET MVC
+playing with ASP.NET MVC
