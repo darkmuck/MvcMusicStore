@@ -10,7 +10,13 @@ namespace MvcMusicStore.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            ViewModels.ShoppingCartViewModel cart = new ViewModels.ShoppingCartViewModel();
+            cart.Albums = new List<string>();
+            cart.Albums.Add("Album 1");
+            cart.Albums.Add("Album 2");
+            cart.Total = 10;
+
+            return View(cart);
         }
 
         public ActionResult About()
